@@ -1,0 +1,53 @@
+.card {
+  border: 1px solid var(--border);
+  padding: 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: hsla(222, 46%, 11%, 0.4);
+}
+
+.card > * + * {
+  margin-top: 0.75rem;
+}
+
+.card > p {
+  max-width: max-content;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.card > header h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card > header > p {
+  flex-shrink: 0;
+}
+
+.card h5 {
+  font-weight: 500;
+  color: var(--muted-foreground);
+}
+
+@media not all and (max-width: 768px) {
+  .card {
+    font-size: 1.1rem;
+  }
+  .card p {
+    font-weight: 500;
+  }
+}

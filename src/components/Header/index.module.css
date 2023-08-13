@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header input {
+  padding: 8px;
+  border-radius: var(--radius);
+  outline: none;
+  background: transparent;
+  border: 1px solid var(--input);
+  max-width: 228px;
+  margin-left: 12px;
+}
+
+.header h3 {
+  font-size: 1.5rem;
+}
+
+.button {
+  position: absolute;
+  top: 15%;
+  right: 6px;
+  padding: 4px;
+  background: transparent;
+  border: none;
+}
